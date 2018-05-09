@@ -1,0 +1,23 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+<body>
+    <h2> Hello </h2>
+
+    <h1> What is your name?</h1>
+
+    <form method="POST" action="/form">
+        <div class="form-group">
+            <input type="text" name="name">
+        </div>
+
+        <h1> How old are you?</h1>
+
+        <div class="form-group">
+            <input type="text" name="age">
+        </div>
+
+        <input class="btn btn-primary" type="submit" value="submit">
+    </form>
+</body>
+{% endblock %}
